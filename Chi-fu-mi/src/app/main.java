@@ -15,5 +15,9 @@ public class main {
 		Joueur j2 = new Joueur();
 		Jeu jeu = new Jeu(j1, j2);
 		jeu.commencer();
+		try {
+			jeu.jouer();
+		} catch (IOException e) {
+		}
 	}
 }

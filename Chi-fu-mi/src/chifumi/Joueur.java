@@ -5,15 +5,10 @@ import java.util.List;
 public class Joueur {
 
 	private String pseudo;
-	private List<Coup> listeDeCoup;
+	private List<Tour> listeDeTour;
 	private Integer score = 0;
 
 	public Joueur() {
-	}
-
-	@Override
-	public String toString() {
-		return "Joueur [pseudo=" + pseudo + "]";
 	}
 
 	public String getPseudo() {
@@ -32,12 +27,12 @@ public class Joueur {
 		this.score = score;
 	}
 
-	public List<Coup> getListeDeCoup() {
-		return listeDeCoup;
+	public List<Tour> getListeDeTour() {
+		return listeDeTour;
 	}
 
-	public void setListeDeCoup(List<Coup> listeDeCoup) {
-		this.listeDeCoup = listeDeCoup;
+	public void setListeDeTour(List<Tour> listeDeTour) {
+		this.listeDeTour = listeDeTour;
 	}
 
 }
